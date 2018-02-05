@@ -11,7 +11,9 @@ Gas turbine power output primarily depends on the ambient parameters which are a
 
 Operating data of power plants is the proprietary of the asset owners and/or design companies and public access is limited. For this project data was obtained from UCI repository for a CCPP in located in turkey [3]. The data was collected over the time of 6 years.
 
-The results show that
+The development of KPI was demonstrated using data analysis and regression tools. In the data analysis, data was loaded as pandas data frame and its features were explored. The correlation among the parameters was plotted as grid plot to find out independent nature of the data, results are shown in the jupyter notebook Q3_Plot1.ipnyb. For regression the data was split into two sets: train set and test set. A linear regression model was trained on the train set and results were evaluated by comparing with the test set. The predicted PE values were plotted against the measured ones and goodness of prediction measures such as MAE, MSE, and RMSE were calculated.  Jupyter notebook Q3_Plot2 shows the results.
+
+Overall the two plots of this exercise show that the KPI's of the CCPP can be predicted using external readily available data with reasonable accuracy. This approach can be extended to more KPI measures and for other chemical and power plants. For this purpose more test data and ML algorithm need to be evaluated. 
 
 *Reference:*
 1. Ramireddy V. An overview of combined cycle power plant. <http://electricalengineering-portal.com/an-overview-of-combined-cycle-power-plant> [accessed: 02.03.13].
